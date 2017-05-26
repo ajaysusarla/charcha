@@ -1,0 +1,76 @@
+name: charcha
+version: 0.0.1
+synopsis: An TUI IRC client
+description: 
+license:
+license-file:
+author: Partha Susarla <mail@spartha.org>
+maintainer: Partha Susarla <mail@spartha.org>
+homepage:
+copyright:
+category:
+build-type: Simple
+cabal-version:
+tested-with:
+
+extra-doc-files: README.md
+
+source-repository head
+  type:     git
+  location: https://github.com/ajaysusarla/charcha
+                  
+
+Library
+  hs-source-dirs: src
+  exposed-modules:
+                  Charcha.Utils
+                , Charcha.Config
+
+  --other-modules:
+  --              -- Generated
+  --              Paths_charcha
+  --            , Version_charcha
+
+  build-depends:
+                base >=4.8
+  default-language: Haskell2010
+  --build-tools:
+  --            alex
+  --          , happy
+  ghc-options:
+              -Wall
+              -Werror
+              -fno-warn-name-shadowing
+              -fno-warn-missing-signatures
+              -fno-warn-unused-matches
+              -O2
+
+
+executable cogent
+  main-is: Main.hs
+  hs-source-dirs: main
+  build-depends:
+                charcha
+              , base >= 4.8
+  default-language: Haskell2010
+  --build-tools:
+  --            alex
+  --          , happy
+  ghc-options:
+              -Wall
+              -Werror
+              -fno-warn-name-shadowing
+              -fno-warn-missing-signatures
+              -fno-warn-unused-matches
+              -O2
+
+test-suite test-util
+  type: exitcode-stdio-1.0
+  default-language: Haskell2010
+  main-is: test-util.hs
+  hs-source-dirs: main, src, test
+  build-depends:
+                charcha
+              , base >= 4.8
+  ghc-options:
+              -Wall
