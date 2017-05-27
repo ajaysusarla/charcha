@@ -1,16 +1,16 @@
 name: charcha
 version: 0.0.1
-synopsis: An TUI IRC client
-description: 
-license:
-license-file:
+synopsis: A TUI IRC client
+description: A TUI IRC client
+license: GPL
+license-file: LICENSE
 author: Partha Susarla <mail@spartha.org>
 maintainer: Partha Susarla <mail@spartha.org>
 homepage:
 copyright:
 category:
 build-type: Simple
-cabal-version:
+cabal-version: >= 1.18
 tested-with:
 
 extra-doc-files: README.md
@@ -26,13 +26,13 @@ Library
                   Charcha.Utils
                 , Charcha.Config
 
-  --other-modules:
-  --              -- Generated
-  --              Paths_charcha
-  --            , Version_charcha
-
+  other-modules:
+                -- Generated
+                Paths_charcha
   build-depends:
                 base >=4.8
+              , base-compat >= 0.9 && < 0.10
+              , gitrev >= 1.3 && < 1.4
   default-language: Haskell2010
   --build-tools:
   --            alex
@@ -46,12 +46,13 @@ Library
               -O2
 
 
-executable cogent
+executable charcha
   main-is: Main.hs
   hs-source-dirs: main
   build-depends:
                 charcha
               , base >= 4.8
+              , base-compat >= 0.9 && < 0.10
   default-language: Haskell2010
   --build-tools:
   --            alex
@@ -72,5 +73,6 @@ test-suite test-util
   build-depends:
                 charcha
               , base >= 4.8
+              , base-compat >= 0.9 && < 0.10
   ghc-options:
               -Wall

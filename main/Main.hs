@@ -1,7 +1,7 @@
 module Main where
 
-import Utils (getCharchaVersion)
+import Charcha.Utils (getCharchaVersion)
 main :: IO ()
 main = do
-  putStrLn str getCharchaVersion
+  putStrLn getCharchaVersion
 

@@ -1,4 +1,3 @@
-module Config where
+module Charcha.Config where
 
 import Prelude ()
-import Prelde.Compat
