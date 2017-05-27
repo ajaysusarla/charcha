@@ -25,6 +25,7 @@ Library
   exposed-modules:
                   Charcha.Utils
                 , Charcha.Config
+                , Charcha.OptArgs
 
   other-modules:
                 -- Generated

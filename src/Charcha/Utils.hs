@@ -10,10 +10,7 @@ import Data.Version (showVersion)
 import Paths_charcha (version)
 
 getCharchaVersion :: String
-getCharchaVersion = "Charcha development version: " ++ showVersion version ++ suffix
+getCharchaVersion = "Charcha version: " ++ showVersion version ++ suffix
   where
-    suffix = if $(gitHash) == "" then "" else "-" ++ take 7 $(gitHash)
-
-getCharchaVersionWithoutGit :: String
-getCharchaVersionWithoutGit = "Charcha version: " ++ showVersion version
+    suffix = if $(gitHash) == "UNKNOWN" then "" else "-" ++ take 7 $(gitHash)
 
