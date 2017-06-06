@@ -178,5 +178,5 @@ import Charcha.OptArgs (parseOptArgs)
 main :: IO ()
 main = do
   opts <- parseOptArgs
-
+  putStrLn "Nothing for now."
 

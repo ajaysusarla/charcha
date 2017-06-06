@@ -36,13 +36,13 @@ optArgsDescr =
   [
     Option ['c'] ["config"]
     (ReqArg (\ path c -> c { argConfFile = Just path }) "PATH")
-    "Path to configuration file"
+    "path to configuration file"
   , Option ['v'] ["version"]
     (NoArg (\ c -> c { argFlag = ShowVersion }))
-    "Print Charcha version"
+    "print version information and exit"
   , Option ['h'] ["help"]
     (NoArg (\ c -> c { argFlag = ShowHelp }))
-    "Print Charcha help"
+    "display this help and exit"
   ]
 
 usage :: IO ()
