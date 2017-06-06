@@ -1,9 +1,11 @@
 {-# LANGUAGE TemplateHaskell #-}
 
-module Charcha.Utils where
+module Charcha.Utils (
+  -- Functions
+  getCharchaVersion
+                     ) where
 
 import Prelude (String, (++), (==), take)
---import Prelude.Compat (String, (++), (==), take)
 
 import Development.GitRev
 import Data.Version (showVersion)
