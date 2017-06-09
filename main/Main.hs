@@ -178,5 +178,6 @@ import Charcha.OptArgs (parseOptArgs)
 main :: IO ()
 main = do
   opts <- parseOptArgs
+  -- cfile <- argConfFile opts
   putStrLn "Nothing for now."
 

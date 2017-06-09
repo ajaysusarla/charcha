@@ -23,10 +23,11 @@ source-repository head
 Library
   hs-source-dirs: src
   exposed-modules:
-                  Charcha.Utils
-                , Charcha.Config
+                  Charcha.Config
                 , Charcha.OptArgs
+                , Charcha.Paths
                 , Charcha.Types
+                , Charcha.Utils
                 , Charcha.IRC.Types
                 , Charcha.IRC.Commands
 
@@ -41,6 +42,7 @@ Library
               , connection >= 0.2 && < 0.3
               , gitrev >= 1.3 && < 1.4
               , network-simple >= 0.4.0.5 && <= 0.4.1
+              , text >= 1.2 && < 1.3
               , vty >= 5.15.1 && < 5.16
   default-language: Haskell2010
   --build-tools:

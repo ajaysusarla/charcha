@@ -1,6 +1,9 @@
 module Charcha.OptArgs (
+  -- Types
+  argConfFile
+  , argFlag
   -- Functions
-  parseOptArgs
+  , parseOptArgs
                        ) where
 
 import Prelude ()
