@@ -24,6 +24,7 @@ Library
   hs-source-dirs: src
   exposed-modules:
                   Charcha.Config
+                , Charcha.FileOps
                 , Charcha.OptArgs
                 , Charcha.Paths
                 , Charcha.Types

@@ -23,3 +23,7 @@ data CharchaConfig = CharchaConfig
   , configBell :: Bool
   , configNotification :: Bool
   } deriving (Eq, Show)
+
+
+-- Connection Status
+-- data ConnectionStatus = Connected | Disconnected
