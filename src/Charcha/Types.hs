@@ -1,7 +1,10 @@
 module Charcha.Types (
+  CharchaConfig(..)
 ) where
 
-import Prelude(Int, Bool, Eq, Show)
+import Prelude()
+import Prelude.Compat
+--import Prelude(Int, Bool, Eq, Show)
 
 import Data.Maybe
 import qualified Data.Text as T

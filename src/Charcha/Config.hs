@@ -1,6 +1,7 @@
 module Charcha.Config where
 
-import Prelude (Int)
+import Prelude ()
+import Prelude.Compat
 
 import Charcha.Types
 
