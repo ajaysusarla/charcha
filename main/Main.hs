@@ -169,9 +169,9 @@ module Main where
 
 import Prelude
 
--- import Brick()
--- import Brick.BChan()
--- import qualified Graphics.Vty as Vty
+import Brick()
+import Brick.BChan()
+import qualified Graphics.Vty as Vty
 
 import Charcha.OptArgs (parseOptArgs)
 
